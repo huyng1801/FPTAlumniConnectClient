@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Bảng Điều Khiển Quản Trị | CodingLab </title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxl-c-plus-plus'></i>
+            <span class="logo_name">CodingLab</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="../index.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="list_post.html" class="active">
+                    <i class='bx bx-box'></i>
+                    <span class="links_name">Bài đăng</span>
+                </a>
+            </li>
+            <li>
+                <a href="../user/list_user.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Người dùng</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">Bài viết</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class='bx bx-search'></i>
+            </div>
+            <div class="profile-details">
+                <img src="https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" alt="">
+                <span class="admin_name">Prem Shahi</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </nav>
+
+        <div class="home-content px-3">
+            <div class="mb-3">
+                <a href="add_post.html" class="btn btn-primary">Thêm bài viết</a>
+            </div>
+            <table class="table table-bordered table-striped mt-4">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Danh Mục</th>
+                        <th>Nội Dung</th>
+                        <th>Tác Giả</th>
+                        <th>Trạng Thái</th>
+                        <th>Ngày Tạo</th>
+                        <th>Ngày Cập Nhật</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample Row: Replace with dynamic data from your database -->
+                    <tr>
+                        <td>1</td>
+                        <td>Công Nghệ</td>
+                        <td>Hướng dẫn sử dụng Bootstrap</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>Đang hoạt động</td>
+                        <td>2024-09-20</td>
+                        <td>2024-09-22</td>
+                        <td>
+                            <a href="edit_post.html?postId=1" class="btn btn-info btn-sm">Sửa</a>
+                            <button class="btn btn-danger btn-sm" onclick="confirmDelete(1)">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Lập Trình</td>
+                        <td>Thực hành với ReactJS</td>
+                        <td>Trần Thị B</td>
+                        <td>Đang hoạt động</td>
+                        <td>2024-09-21</td>
+                        <td>2024-09-23</td>
+                        <td>
+                            <a href="edit_post.html?postId=1" class="btn btn-info btn-sm">Sửa</a>
+                            <button class="btn btn-danger btn-sm" onclick="confirmDelete(2)">Xóa</button>
+                        </td>
+                    </tr>
+                    <!-- Additional rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else {
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+            }
+        }
+
+        function confirmDelete(id) {
+            if (confirm('Bạn có chắc chắn muốn xóa bài viết này?')) {
+                // Logic to delete the post, e.g., making an API call
+                console.log('Deleted post with ID:', id);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

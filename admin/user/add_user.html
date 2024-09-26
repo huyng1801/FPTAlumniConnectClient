@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Thêm Người Dùng | CodingLab </title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxl-c-plus-plus'></i>
+            <span class="logo_name">CodingLab</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="../index.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="../post/list_post.html">
+                    <i class='bx bx-box'></i>
+                    <span class="links_name">Bài đăng</span>
+                </a>
+            </li>
+            <li>
+                <a href="list_user.html" class="active">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Người dùng</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">Thêm Người Dùng</span>
+            </div>
+            <div class="profile-details">
+                <img src="https://cdn.vectorstock.com/i/500p/08/19/gray-photo-placeholder-icon-design-ui-vector-35850819.jpg" alt="">
+                <span class="admin_name">Prem Shahi</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </nav>
+
+        <div class="home-content px-3 pb-3">
+            <form id="addUserForm" action="/path/to/your/submit" method="POST">
+                <div class="form-group">
+                    <label for="firstName">Họ</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Tên</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="isActive">Trạng Thái</label>
+                    <select class="form-control" id="isActive" name="isActive">
+                        <option value="true">Active</option>
+                        <option value="false">Inactive</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="profilePictureUrl">URL Ảnh Đại Diện</label>
+                    <input type="text" class="form-control" id="profilePictureUrl" name="profilePictureUrl">
+                </div>
+                <div class="form-group">
+                    <label for="educationHistory">Lịch Sử Giáo Dục</label>
+                    <textarea class="form-control" id="educationHistory" name="educationHistory"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="major">Chuyên Ngành</label>
+                    <input type="text" class="form-control" id="major" name="major">
+                </div>
+                <div class="form-group">
+                    <label for="isMentor">Có phải là Mentor?</label>
+                    <select class="form-control" id="isMentor" name="isMentor">
+                        <option value="true">Có</option>
+                        <option value="false">Không</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Thêm Người Dùng</button>
+                <a href="list_user.html" class="btn btn-secondary">Hủy</a>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+    </script>
+
+</body>
+
+</html>
