@@ -638,7 +638,7 @@ hr {
     margin-top: 40px;
 }
 
-.blog-part3903 {
+.event-list-item {
     margin-top: 30px;
     background-color: #ffffff;
     padding: 15px;
@@ -646,41 +646,48 @@ hr {
             box-shadow: 0px 0px 13px -3px;
 }
 
-.blog-details3902 h3 {
+.event-details h3 {
     font-size: 20px;
     color: #FF7361;
 }
 
-.blog-details3902 i {
+.event-details i {
     font-size: 20px;
     padding-top: 10px;
 }
 
-.ques-icon-info2933 i {
+.event-meta-info i {
     font-size: 13px;
     padding-right: 10px;
     color: #222629;
 }
 
-.blog-part3903 p {
+.event-meta-info a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222629;
+}
+
+.event-list-item p {
     margin-top: 20px;
     font-size: 13px;
     color: #848991;
     font-family: fontawesome;
 }
 
-.continue-deatils738 {
+.continue-details {
     text-align: right;
 }
 
-.continue-deatils738 a {
+.continue-details a {
     background-color: #FF7361;
     padding: 5px;
     font-size: 13px;
     color: #fff;
+    text-decoration: none;
 }
 
-.continue-deatils738 i {
+.continue-details i {
     font-size: 13px;
 }
 
@@ -773,11 +780,12 @@ hr {
 
 .status-part3821 i {
     background-color: #EAEAEB;
-    padding: 15px 123px 15px 10px;
+    padding: 15px;
     font-size: 15px;
     color: black;
     font-weight: bold;
     margin-top: 10px;
+    width: 100%;
 }
 
 
@@ -1458,8 +1466,7 @@ h5:hover {
             box-shadow: 0px 0px 13px -3px;
 }
 
-.username029 {
-    width: 75%;
+.ask-question-input-part032 input {
     height: 40px;
     background-color: #F3F3F3;
     border: none;
@@ -1469,102 +1476,16 @@ h5:hover {
     border: 1px solid #fd6371;
 }
 
+.ask-question-input-part032 input:hover, .ask-question-input-part032 input:focus {
+    border: 1px solid #fd6371;
+    box-shadow: none;
+}
 
-
-.form-description43 {
+.ask-question-input-part032 textarea{
     margin-right: 108px;
     color: #fd7362;
     font-family: fontawesome;
     font-weight: bold;
-}
-
-.email-part320 {
-    margin-top: 30px;
-}
-
-.email30 {
-    width: 75%;
-    height: 40px;
-    background-color: #F3F3F3;
-    border: none;
-    outline: inherit;
-    padding: 10px;
-    border-radius: 3px;
-    border: 1px solid #fd6371;
-}
-
-.form-description442 {
-    margin-right: 130px;
-    color: #fd7362;
-    font-family: fontawesome;
-    font-weight: bold;
-}
-
-.question-title39 {
-    margin-top: 30px;
-}
-
-.question-ttile32 {
-    width: 75%;
-    height: 40px;
-    background-color: #F3F3F3;
-    border: none;
-    outline: inherit;
-    padding: 10px;
-    border-radius: 3px;
-    border: 1px solid #fd6371;
-}
-
-.form-description433 {
-    margin-right: 90px;
-    color: #fd7362;
-    font-family: fontawesome;
-    font-weight: bold;
-}
-
-.categori49 {
-    margin-top: 30px;
-}
-
-.list-category53 {
-    width: 100%;
-    height: 40px;
-    background-color: #F3F3F3;
-    border: none;
-    outline: inherit;
-    padding: 10px;
-    border-radius: 3px;
-    border: 1px solid #fd6371;
-}
-
-.form-description4342 {
-    margin-right: 90px;
-    color: #fd7362;
-    font-family: fontawesome;
-    font-weight: bold;
-}
-
-.categori49 > label {
-    margin-right: 100px;
-}
-
-.form-description43305 {
-    margin-right: 117px;
-    color: #fd7362;
-    font-family: fontawesome;
-    font-weight: bold;
-}
-
-.form-description433 {
-    float: left;
-}
-
-.form-description23993 {
-    margin-right: 106px;
-    color: #fd7362;
-    font-family: fontawesome;
-    font-weight: bold;
-    float: left;
 }
 
 .button-group-addfile3239 {
@@ -2331,4 +2252,575 @@ h5:hover {
 
 .category2781 {
     margin-top: 70px;
+}
+
+/* Job Post Container */
+.jobpost-display {
+    border: 1px solid #e3e3e3;
+    background-color: #fff;
+    box-shadow: 0px 0px 13px -3px #777;
+    margin-bottom: 2rem;
+    padding: 2.4rem;
+}
+
+.job-header h3 a {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333;
+}
+
+.job-header h3 a:hover {
+    color: #FF7361;
+}
+
+.job-details p {
+    font-family: "FontAwesome";
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 1.42857143;
+}
+
+.job-icon-info a {
+    font-size: 1.3rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.job-icon-info a:hover {
+    color: #007bff;
+}
+
+.job-icon-info i {
+    margin-right: 5px;
+}
+
+.btn-job-apply {
+    background-color: #FF7361;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 99px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.btn-job-apply:hover { 
+    background-color: #FF7361;
+}
+.btn-job-views {
+    background-color: #FF7361;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 99px;
+}
+
+/* Job Post Details Container */
+.jobpost-details {
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.jobpost-details .job-header {
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.jobpost-details .job-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.jobpost-details .company-name, .jobpost-details .job-location, .jobpost-details .job-salary {
+    font-size: 1.4rem;
+    color: #666;
+}
+
+.jobpost-details .job-location i, .jobpost-details .job-salary i {
+    margin-right: 5px;
+}
+
+.jobpost-details .job-description {
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #e3e3e3;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.jobpost-details .job-description h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.jobpost-details .job-description p {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.jobpost-details .job-description ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.jobpost-details .job-sidebar {
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.jobpost-details .job-deadline, .jobpost-details .job-statistics {
+    margin-bottom: 2rem;
+}
+
+.jobpost-details .job-deadline h4, .jobpost-details .job-statistics h4 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.jobpost-details .job-deadline p, .jobpost-details .job-statistics p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.jobpost-details .btn-job-apply-large {
+    display: inline-block;
+    background-color: #FF7361;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.jobpost-details .btn-job-apply-large:hover {
+    background-color: #ff5a42;
+}
+
+.jobpost-details .btn-report {
+    display: inline-block;
+    background-color: #FF4E42;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.jobpost-details .btn-report:hover {
+    background-color: #e73b32;
+}
+/* apply */
+.application-form {
+    background-color: #f8f9fa;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.application-form h3 {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-apply {
+    background-color: #FF7361;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 99px;
+    transition: background-color 0.3s;
+}
+
+.btn-apply:hover {
+    background-color: #FF7361;
+}
+
+.form-text.text-muted {
+    font-size: 14px;
+    color: #6c757d;
+}
+/* create_event */
+.event-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.event-form .form-group {
+    margin-bottom: 15px;
+}
+
+.event-form .form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.event-form .form-control {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.event-form .btn-submit {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-form .btn-submit:hover {
+    background-color: #0056b3;
+}
+/* Event Details */
+.event-details {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.event-title {
+    font-size: 2.4rem; /* Adjusted for consistency */
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.event-meta-info {
+    font-size: 1.4rem; /* Adjusted for consistency */
+    color: #777;
+}
+
+.event-description {
+    font-size: 1.6rem; /* Adjusted for consistency */
+    margin-top: 10px;
+}
+
+/* Rating Form */
+.rating-form {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.rating-form h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 2rem; /* Adjusted for consistency */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+
+/* Star Rating Styles */
+.star-rating {
+    position: relative;
+    display: inline-block;
+}
+
+.stars {
+    display: flex;
+    cursor: pointer;
+}
+
+.stars .fa-star {
+    font-size: 2rem; /* Adjusted size */
+    color: #ccc; /* Default star color */
+    transition: color 0.2s;
+}
+
+.stars .fa-star:hover,
+.stars .fa-star:hover ~ .fa-star {
+    color: #ffcc00; /* Color on hover */
+}
+
+.stars .fa-star.selected {
+    color: #ffcc00; /* Color for selected star */
+}
+
+/* Comments Section */
+.comments-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.comments-section h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 2rem; /* Adjusted for consistency */
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 1.4rem; /* Adjusted for consistency */
+    color: #333;
+}
+/* Mentorship request */
+
+.mentorship-request-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.mentorship-request-form .form-control {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.mentorship-request-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Container for the mentorship requests */
+.ask-question-input-part032 {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Title styles */
+.ask-question-input-part032 h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Form styles */
+.mentorship-request-form {
+    margin-bottom: 2rem;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Textarea styles */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Button styles */
+.publish-button2389 {
+    text-align: right;
+}
+
+.publis1291 {
+    background-color: #FF7361;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.publis1291:hover {
+    background-color: #e65c4e; /* Darker shade on hover */
+}
+
+/* Mentorship requests container */
+.mentorship-requests {
+    margin-top: 2rem;
+}
+
+/* Each mentorship request styling */
+.mentorship-request {
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Request details */
+.request-details p {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+/* Rating styles */
+.request-rating {
+    margin: 1rem 0;
+}
+
+.rating-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #FFD700; /* Gold color for stars */
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.rating-btn:hover {
+    color: #FF8C00; /* Orange color on hover */
+}
+
+/* Comments section */
+.request-comments {
+    margin-top: 1rem;
+}
+
+.request-comments h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Comment input styling */
+.comment-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-section textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 0.5rem;
+}
+
+/* Comment button styling */
+.comment-section .btn {
+    background-color: #FF7361;
+    color: #fff;
+}
+
+/* session */
+.mentorship-session-form .form-group {
+    margin-bottom: 15px;
+}
+
+.publish-button2389 {
+    text-align: right; /* Aligns the button to the right */
+}
+
+.publis1291 {
+    background-color: #FF7361;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.publis1291:hover {
+    background-color: #ff5a41; /* Darker shade on hover */
+}
+
+/* answer */
+.mentorship-answers {
+    margin-top: 20px; /* Spacing from the top */
+}
+
+.mentorship-answer {
+    margin-bottom: 20px; /* Spacing between answers */
+    padding: 15px; /* Padding for the answer box */
+    border: 1px solid #ccc; /* Border around each answer */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.answer-details {
+    margin-bottom: 10px; /* Spacing below the request details */
+}
+
+.answer-response h5 {
+    margin-bottom: 10px; /* Space below the header */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Button color */
+    border: none; /* Remove border */
+    color: #fff; /* Text color */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
